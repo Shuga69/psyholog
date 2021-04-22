@@ -1,0 +1,16 @@
+.motivation-check:before{
+    content: "";
+    display: block;
+    background: url("../../assets/checkforsitev2.png") no-repeat;
+    width: 20px;
+    height: 20px;
+    float: left;
+    padding: 0 6px 0 0;
+}
+.motivation-check{
+    padding: 20px 0 20px 0;
+    font-size: 15px;
+    font-weight: 900;
+    margin-right: 4%;
+
+}

@@ -1,0 +1,13 @@
+.footer-menu{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0 0 0;
+}
+.menu-points{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

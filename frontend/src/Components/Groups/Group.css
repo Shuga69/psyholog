@@ -1,0 +1,41 @@
+.group-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15%;
+    width: 100%;
+
+}
+.group-container-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+
+}
+.group-short-info-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 90%;
+}
+.group-text{
+  padding: 10px 50px 10px 50px;
+}
+.group-container-img{
+    width:45%;
+}
+.group-button-container{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0 0 0;
+}
+.short-modal-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

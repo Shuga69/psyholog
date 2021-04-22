@@ -1,0 +1,43 @@
+.how-to-contact-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 300px;
+
+}
+.how-to-contact-left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    flex-direction: column;
+    height: 100%;
+    width: 45%;
+    margin-top: 2%;
+    border-top: 2px solid rgb(32, 186, 197);
+}
+.how-to-contact-right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: start;
+flex-direction: column;
+    height: 100%;
+    width: 45%;
+    border-bottom: 2px solid rgb(32, 186, 197);
+}
+@media only screen and (max-width: 768px) {
+    .how-to-contact-container{
+        flex-wrap: wrap;
+        height:100%;
+
+    }
+    .how-to-contact-left{
+
+        width: 100%;
+
+    }
+    .how-to-contact-right{
+
+        width: 100%;
+
+    }
+}

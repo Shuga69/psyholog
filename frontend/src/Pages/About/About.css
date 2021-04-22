@@ -1,0 +1,240 @@
+.about-form{
+    display: flex;
+    flex-direction: column;
+}
+.about-shuhai{
+    display: flex;
+    flex-direction: row;
+    
+}
+.about-shuhai img{
+    border-style: solid;
+    border-radius: 100%;
+    border-color: white;
+    margin-top: 0;
+    background-color: rgba(221, 221, 221, 0.342);
+}
+.about-shuhai-title{
+    margin-top: 5%;
+    text-align: center;
+    font-weight: 900;
+    font-size: 45px;
+}
+.about-shuhai-main-info{
+    text-align: left;
+    margin: 5%;
+    margin-top: 2%;
+    margin-left: 10%;
+    font-size: 20px;
+    font-weight: 800;
+}
+.about-section{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.about-shuhai-education-section{
+    margin-top: 5%;
+    background: url("./AboutImage/aboutBackground.png") repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.about-shuhai-education-title{
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    width: 30%;
+    margin-top: 4%;
+}
+
+.about-shuhai-education{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: left;
+   margin-top: 0%;
+   margin-bottom: 5%;
+}
+
+.about-shuhai-education-info{
+    white-space: pre-line;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: left; */
+    font-size: 15px;
+    width: 40%;
+    background-color: white;
+    border-radius: 30px;
+    margin-left: 6%;
+    margin-bottom: 1%;
+    margin-top: 5%;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.after-number-text{
+   
+    width: 100%;
+
+}
+.after-number-text6 p::before{
+    content: "6";
+    text-align: center;
+   color: white;
+    display: block;
+    background-color: rgb(33, 188, 199);
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 6px 0 0;
+    border-radius: 50%;
+    box-shadow:  0 5px 30px rgba(33, 188, 199, 0.575);
+}
+.after-number-text5 p::before{
+    content: "5";
+    text-align: center;
+   color: white;
+    display: block;
+    background-color: rgb(33, 188, 199);
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 6px 0 0;
+    border-radius: 50%;
+    box-shadow:  0 5px 30px rgba(33, 188, 199, 0.575);
+}
+.after-number-text4 p::before{
+    content: "4";
+    text-align: center;
+   color: white;
+    display: block;
+    background-color: rgb(33, 188, 199);
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 6px 0 0;
+    border-radius: 50%;
+    box-shadow:  0 5px 30px rgba(33, 188, 199, 0.575);
+}
+.after-number-text3 p::before{
+    content: "3";
+    text-align: center;
+   color: white;
+    display: block;
+    background-color: rgb(33, 188, 199);
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 6px 0 0;
+    border-radius: 50%;
+    box-shadow:  0 5px 30px rgba(33, 188, 199, 0.575);
+}
+.after-number-text2 p::before{
+    content: "2";
+    text-align: center;
+   color: white;
+    display: block;
+    background-color: rgb(33, 188, 199);
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 6px 0 0;
+    border-radius: 50%;
+    box-shadow:  0 5px 30px rgba(33, 188, 199, 0.575);
+}
+.after-number-text1 p::before{
+    content: "1";
+    text-align: center;
+   color: white;
+    display: block;
+    background-color: rgb(33, 188, 199);
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 6px 0 0;
+    border-radius: 50%;
+    box-shadow:  0 5px 30px rgba(33, 188, 199, 0.575);
+}
+.number{
+    background-color: rgb(33, 188, 199);
+    width: 7%;
+    height: 30px !important;
+    border-radius: 3px;
+    margin-top: -30%;
+    box-shadow:  0 5px 30px rgba(33, 188, 199, 0.575);
+    margin-left: 3%;
+}
+.number p{
+    text-align: center;
+    
+    color: white;
+}
+.about-shuhai-education-info p{
+    margin: 10%;
+    margin-left: 4%;
+   width: 80%;
+  
+
+}
+.about-shuhai-diploma{
+    margin-top:5%;
+    -moz-margin-top:7%;
+}
+.about-shuhai-diploma-title{
+    font-size: 20px;
+    font-weight: 800;
+}
+.diploma-img img {
+    margin-left: 5%;
+    margin-top: 2%;
+}
+@media only screen and (max-width: 1200px){
+   .about-shuhai-title{
+       font-size: 30px;
+   }
+   .about-shuhai-main-info{
+       font-size: 15px;
+   }
+
+ }
+ @media only screen and (max-width: 991px){
+    .about-shuhai-education{
+        flex-wrap: wrap;
+        
+    }
+   
+    .about-shuhai-education-title{
+        font-size: 20px;
+        
+    }
+     }
+     @media only screen and (max-width: 500px){
+        .about-shuhai-title{
+            font-size: 30px;
+        }
+        .about-shuhai-education-info{
+            width: 90%;
+        }
+        .about-shuhai{
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .about-shuhai-education-title{
+            font-size: 20px;
+            width: 100%;
+        }
+        .about-shuhai img{
+            width: 300px;
+            height: 250px;
+        }
+        .about-shuhai-main-info{
+            font-size: 15px;
+        }
+     }
+    

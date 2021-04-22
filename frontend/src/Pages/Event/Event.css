@@ -1,0 +1,120 @@
+.changer-group{
+    color: white !important;
+    text-decoration: none !important;
+    transition: 999999999999s;
+}
+
+.changer-solo{
+    color: white !important;
+    text-decoration: none !important;
+    transition: 999999999999s;
+}
+.group-lessons-title{
+    font-size: 45px;
+    text-align: center;
+}
+.group-lessons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.group-btn{
+    background-color: rgb(11, 199, 199);
+    border-color: rgb(11, 199, 199);
+
+   height:50px;
+}
+.group-btn:hover{
+    background-color: #002236;
+    border-color: #002236;
+    
+    
+}
+.btn-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 5px;
+   width: 100%;
+    background-color: rgb(11, 199, 199);
+    
+
+}
+.btn-lessons{
+    /* background-color: rgb(33, 188, 199); */
+    
+    width: 30%;
+    margin: 1%;
+    margin-bottom: 0;
+    height: 40px;
+    text-align: center;
+    font-weight: 400; 
+}
+.group{
+
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.main-info-time{
+    margin: 0;
+    margin-left: 10%;
+}
+.main-info-location{
+    margin: 0;
+    margin-left: 10%;
+}
+
+.main-info-date{
+    margin: 0;
+}
+.group-main-info{
+    margin-left: 5%;
+}
+.some-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.group-img{
+    width: 40%;
+}
+.group-main-title{
+    text-align: center;
+    font-size: 45px;
+    
+}
+.group-title{
+    text-align: center;
+}
+.group-info-btn{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.group-info{
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+@media only screen and (max-width: 1200px){
+   
+}
+@media only screen and (max-width: 991px){
+    
+}
+@media only screen and (max-width: 500px){
+   .btn-form{
+       height: 50px;
+   }
+}

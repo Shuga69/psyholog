@@ -1,0 +1,132 @@
+.consult-solo-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+   margin-top: 4%;
+   
+}
+.consult-solo-container{
+    width: 100%;
+    
+}
+.consult-solo-title{
+    text-align: center;
+    font-size: 45px;
+
+}
+.consult-solo-title2{
+    font-size: 30px;
+
+}
+.consult-solo-image{
+    border-radius: 100px;
+
+}
+.consult-solo-subtitle{
+    margin-top: 2%;
+}
+.supervision-title{
+   margin-top: 3%;
+    font-size: 19px;
+    font-weight: 800;
+}
+.about-consult-solo{
+    display: flex;
+    justify-content: center;
+   
+}
+.about-consult-solo-offline{
+    font-size: 20px;
+    margin-top: 3%;
+   
+}
+.about-consult-solo-offline p{
+    font-weight: 800;
+}
+.about-consult-solo-offline ul li{
+   
+    font-size: 15px;
+}
+.about-online-consult{
+    margin-top: 10%;
+    font-size: 20px;
+    width: 50%;
+}
+.about-online-consult p{
+    font-weight: 800;
+}
+.about-online-consult ul li{
+    font-size: 15px;
+}
+.consult-solo-text{
+       display: flex;
+       margin-top: 4%;
+       align-items: center;
+       flex-direction: column;
+       margin-left: 4%;
+       font-size: 20px;
+      
+   }
+.consult-solo-text-title{
+    font-size: 30px;
+    text-align: center;
+
+}
+@media only screen and (max-width: 1200px){
+    
+}
+@media only screen and (max-width: 991px){
+    .consult-solo-form{
+        flex-wrap: wrap;
+    }
+    .consult-solo-text{
+        white-space: pre-wrap;
+        
+    }
+    .consult-solo-container{
+        
+    }
+    .consult-solo-title2{
+        white-space: pre-wrap;
+    }
+    .consult-solo-title{
+        font-size: 30px;
+      
+        white-space: pre-wrap;
+    }
+    .about-consult-solo{
+        flex-wrap: wrap;
+        white-space: pre-wrap;
+    }
+}
+@media only screen and (max-width: 500px){
+    .consult-solo-title{
+        font-size: 30px;
+        text-align: center;
+        white-space: pre-wrap;
+    }
+    .consult-solo-title2{
+        text-align: center;
+       
+    }
+    
+    .about-consult-solo-offline p{
+       
+       text-align: center;
+    }
+    .about-online-consult{
+        width: 100%;
+    }
+    .supervision-title{
+        font-size: 15px;
+     }
+    .about-online-consult p{
+        text-align: center;
+    }
+    .consult-solo-image{
+        width: 100%;
+        height: 100%;
+    }
+
+}

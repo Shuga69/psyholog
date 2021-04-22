@@ -1,0 +1,8 @@
+.step-line{
+    width: 60%;
+    height: 15px;
+    background-image: linear-gradient(to right, rgb(33, 188, 199) 0%,  white 80%);
+    margin: auto -1px;
+    border-top: 2px solid rgb(33, 188, 199);
+    border-bottom: 2px solid rgb(33, 188, 199);
+}

@@ -1,0 +1,21 @@
+.about-short-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+}
+.short-info-img{
+    width: 35%;
+}
+.short-info-img img{
+    border-radius: 50px;
+    /*border: 2px solid  #002236;*/
+}
+.about-short-info-text{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 45%;
+    height: 400px;
+}

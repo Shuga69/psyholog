@@ -1,0 +1,43 @@
+.individual-consultation-section{
+    position: relative;
+}
+.individual-consultation-section::before{
+    content: "";
+    position: absolute;
+    top: 0px; left: 0;
+    width: 100%; height: 500px;
+    background-image: url("../../assets/solo-image.jpg");
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(70%);
+
+}
+.individual-consultation__inner{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.individual-text-section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 500px;
+    width: 100%;
+}
+.individual-container{
+    width: 80% ;
+    margin: 0 auto;
+}
+.individual-consultation__inner{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.individual-consultation-img{
+    width: 100%;
+    height: 500px;
+}
+

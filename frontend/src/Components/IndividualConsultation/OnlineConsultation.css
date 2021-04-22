@@ -1,0 +1,26 @@
+.online-consultation-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.online-consultation__inner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.onlineConsultation-text{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width:40%;
+}
+.online-consultation-img{
+    width: 40%;
+}
+.online-consultation-img img{
+    border-radius: 50px;
+}

@@ -1,0 +1,46 @@
+.submit-contact{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20%;
+}
+.btn-form1{
+    display: flex;
+    flex-direction: row;
+}
+.confirm-btn{
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+    background-color: rgb(11, 199, 199);
+    margin-left:7%;
+    border-color: rgb(11, 199, 199);
+}
+.confirm-btn:hover{
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+    margin-left:7%;
+    background-color: #002236;
+    border-color: #002236;
+}
+.confirm-messege{
+    color: greenyellow;
+    text-align: center;
+}
+.cancel-btn{
+    background-color: silver;
+    margin-top: 7%;
+    border-color: silver;  
+}
+.cancel-btn:hover{
+    background-color: grey;
+    margin-top: 7%;
+    border-color: grey;  
+}

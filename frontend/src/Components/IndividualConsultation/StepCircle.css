@@ -1,0 +1,17 @@
+.step-circle {
+    width: 80px;
+    height: 80px;
+
+    border: 4px solid rgb(33, 188, 199);
+    border-radius: 50%;
+    font-size: 30px;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.step-circle p{
+    padding: 0 0 6px 0;
+
+}

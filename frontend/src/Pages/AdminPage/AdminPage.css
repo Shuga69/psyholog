@@ -1,0 +1,14 @@
+.admin-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+.admin-title{
+    text-align: center;
+}
+.submit-btn{
+    
+
+}

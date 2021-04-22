@@ -1,0 +1,260 @@
+/*.contacts-container{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    flex-direction: column;*/
+/*   margin-top: 5%;*/
+/*    margin-bottom: 0;*/
+/*}*/
+
+/*.contacts-title{*/
+/*    font-size: 40px;*/
+/*    text-align: center;*/
+/*    font-weight: 900;*/
+/*}*/
+/*.contacts-form-main-info{*/
+/*    display: flex;*/
+/*    margin-top: 7%;*/
+/*    width: 100%;*/
+/*    */
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    flex-direction: row;*/
+/*}*/
+/*.contacts-solo-consult-info{*/
+/*   */
+/*    */
+/*    margin-left: 0%;*/
+/*    font-size: 15px;*/
+/*    border-top-color: rgb(33, 188, 199);*/
+/*    border-bottom-color: white;*/
+/*    border-right-color: white;*/
+/*    border-left-color: white;*/
+/*    */
+/*    border-style: solid;*/
+/*    */
+/*    */
+/*}*/
+
+/*.contacts-solo-consult-info p{*/
+/*    font-size: 20px;*/
+/*    font-weight: 500;*/
+/*}*/
+/*.contacts-group-consult-info p{*/
+/*    font-size: 20px;*/
+/*    font-weight: 500;*/
+/*   */
+/*}*/
+
+/*.contacts-group-consult-info{*/
+/*    margin-top: 13%;*/
+/*    margin-left: 10%;*/
+/*    font-size: 15px;*/
+/*    border-top-color: white;*/
+/*    border-bottom-color: rgb(32, 186, 197);*/
+/*    border-right-color: white;*/
+/*    border-left-color: white;*/
+/*    border-style: solid;*/
+/*   */
+
+/*}*/
+/*.main-info-cont img{*/
+/*    !* box-shadow: 0 18px 60px rgba(96, 127, 153, 0.548); *!*/
+/*    !* background-color: rgb(32, 186, 197);*/
+/*    border-radius: 10%; *!*/
+/*    */
+/*   */
+/*}*/
+
+/*.icon-circle{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    background-color: rgb(32, 186, 197);*/
+/*   width: 60px;*/
+/*   height: 60px;*/
+/*   */
+/*    border-radius: 50%;*/
+/*}*/
+
+/*.main-info-cont{*/
+/*    height: 240px; */
+/*    width: 100%;*/
+/*   */
+/*    display: flex;*/
+/*    justify-content: flex-start;*/
+/*    align-items: center;*/
+/*    flex-direction: column;*/
+/*    */
+/*}*/
+/*.main-info-cont-numbers{*/
+/*    */
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    text-align: center;*/
+/*    flex-direction: column;*/
+/*}*/
+/*.main-info-text{*/
+/*    white-space: pre-wrap;*/
+/*    font-size: 15px;*/
+/*    font-weight: 700;*/
+/*    display: block;*/
+/*}*/
+/*.main-info-text-numbers{*/
+/*    white-space: pre-wrap;*/
+/*    font-size: 15px;*/
+/*    font-weight: 700;*/
+/*    display: block;*/
+/*}*/
+/*.contacts-form{*/
+/*    margin-top: 0%;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    */
+/*   width: 100%;*/
+/*   */
+/*}*/
+/*.map{*/
+/*    width: 100%;*/
+/*    height:659px;*/
+/*    margin-top: 5%;*/
+/*    border-color: #002236;*/
+/*    border-width: 5px;*/
+/*    border-style: solid;*/
+/*    color: #f0feff;*/
+/*  */
+/*   */
+/*}*/
+/*.contacts-map{*/
+/*    margin-top: 5%;*/
+/*    height: 100vh;*/
+/*    width: 121.7%;*/
+/*    !* width: 98.93vmax; *!*/
+/*    border-color: #002236;*/
+/*    border-width: 5px;*/
+/*    border-style: solid;*/
+/*}*/
+/*@media screen and (device-aspect-ratio: 16/9){*/
+/*    .map{*/
+/*       width:100%;*/
+/*        */
+/*    }*/
+/*   */
+/*}*/
+/*@media only screen and (max-width: 1200px){*/
+/*    .contacts-group-consult-info{*/
+/*        margin-left: 0;*/
+/*        font-size: 13px;*/
+/*    }*/
+/*    .contacts-group-consult-info nobr{*/
+/*        margin-left: 0;*/
+/*        font-size: 15px;*/
+/*    }*/
+/*    .contacts-solo-consult-info{*/
+/*        margin-left: 0;*/
+/*        font-size: 13px;*/
+/*        */
+/*    }*/
+/*    .contacts-solo-consult-info nobr{*/
+/*        margin-left: 0;*/
+/*        font-size: 15px;*/
+/*        */
+/*    }*/
+/*   .contacts-map{*/
+/*    width: 100%;*/
+/*    height: 500px;*/
+/*   }*/
+/* */
+/*  }*/
+/*  @media only screen and (max-width: 991px){*/
+/*      .main-info-text{*/
+/*          font-size: 15px;*/
+/*      }*/
+/*      .main-info-text-numbers{*/
+/*          font-size: 15px;*/
+/*      }*/
+/*    .contacts-title{*/
+/*        font-size: 30px;*/
+/*    }*/
+/*    .contacts-form{*/
+/*        flex-wrap: wrap;*/
+/*        margin-left: 0;*/
+/*        width: 100%;*/
+/*       */
+/*    }*/
+/*    .contacts-form-main-info{*/
+/*        flex-wrap: wrap;*/
+/*    }*/
+/*    .contacts-group-consult-info{*/
+/*        */
+/*        font-size: 13px;*/
+/*    }*/
+/*    .contacts-group-consult-info nobr{*/
+/*        */
+/*        font-size: 15px;*/
+/*    }*/
+/*    .contacts-solo-consult-info{*/
+/*        margin-left: 0;*/
+/*        font-size: 13px;*/
+/*        */
+/*    }*/
+/*    .contacts-solo-consult-info nobr{*/
+/*        margin-left: 0;*/
+/*        font-size: 15px;*/
+/*        */
+/*    }*/
+/*   .contacts-map{*/
+/*    width: 100%;*/
+/*    height: 500px;*/
+/*   }*/
+/*      }*/
+/*      @media only screen and (max-width: 500px){*/
+/*        .contacts-group-consult-info{*/
+/*        */
+/*            white-space: pre-wrap;*/
+/*        }*/
+/*        .contacts-solo-consult-info{*/
+/*            white-space: pre-wrap;*/
+/*            */
+/*        }*/
+/*        .contacts-title{*/
+/*            font-size: 30px;*/
+/*        }*/
+/*        .main-info-text{*/
+/*            font-size: 15px;*/
+/*        }*/
+/*        .main-info-text-numbers{*/
+/*            font-size: 15px;*/
+/*        }*/
+/*        .contacts-form{*/
+/*            flex-wrap: wrap;*/
+/*        }*/
+/*        .contacts-map{*/
+/*            width: 95.5vmin;*/
+/*            height: 500px;*/
+/*           }*/
+/*      }*/
+/*     */
+/* .contacts-map-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+} */
+/* .contacts-map-adress{
+    margin-left: 7%;
+    text-align: center; */
+/* } */
+/* .map-button{
+    background-color: rgb(33, 188, 199);
+    border-color: rgb(33, 188, 199);
+    box-shadow: 0 18px 30px rgba(33, 188, 199, 0.575);
+    height: 55px;
+}
+.map-button:hover{
+    background-color: #002236;
+    border-color: #002236;
+    box-shadow: 0 18px 30px #00223680;
+} */

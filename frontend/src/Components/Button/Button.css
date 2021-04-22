@@ -1,0 +1,25 @@
+.btn-link{
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    border: 3px;
+    border-radius: 5px;
+    padding: 20px 50px;
+    background-color: rgb(33, 188, 199);
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff !important;
+    box-shadow: 0 18px 30px rgba(33, 188, 199, 0.575);
+    transition: .5s;
+    /*margin: 0 auto;*/
+}
+
+.btn-link:hover{
+    box-shadow: 0 18px 30px #00223680;
+    background-color: #002236;
+    background-position: 0 0;
+    text-decoration: none !important;
+    color: #fff;
+}

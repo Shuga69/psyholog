@@ -1,0 +1,11 @@
+.about-certification{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-certification img{
+    transition: .5s;
+}
+.about-certification img:hover{
+    transform: scale(1.5);
+}

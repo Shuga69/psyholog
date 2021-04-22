@@ -1,0 +1,33 @@
+.custom-dropdown-menu{
+    position: absolute;
+    top: 60px;
+
+}
+.header__navigation-link1{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    color: #000 !important;
+    transition: 0.25s linear;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 50px;
+}
+.custom-dropdown-menu-item{
+     color: #000 !important;
+ }
+.custom-dropdown-menu-item:hover{
+    color: rgb(11, 199, 199) !important;
+}
+
+.menu-link{
+    /*background: #002236;*/
+    background: #fff;
+    padding: 20px;
+}

@@ -1,0 +1,8 @@
+.consultation-theme-container{
+    width:100%
+}
+.consultation-themes-text{
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}

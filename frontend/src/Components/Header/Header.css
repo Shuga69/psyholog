@@ -1,0 +1,113 @@
+.header{
+    width: 100%;
+    /*background-color: #002236;*/
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    position: fixed;
+    z-index: 100;
+    transition: top 0.3s;
+}
+.header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.header__inner{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.header__inner-logo{
+    width: 175px;
+    height: 100%;
+}
+
+.header__inner img{
+    margin: 0 auto;
+}
+
+.brand-image{
+    height:100%;
+}
+
+.header-navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto 0;
+}
+
+.header__navigation-link{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    /*color: #fff !important;*/
+    color: #000 !important;
+    transition: 0.25s linear;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__navigation-link:hover{
+    color:  rgb(11, 199, 199) !important;
+    transition: 0.2s linear;
+    text-decoration: none;
+}
+
+
+
+.header__inner-contact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    font-family: Montserrat, sans-serif;
+
+}
+
+.header__inner-contact a{
+    display: flex;
+    color: #000;
+    text-decoration: none;
+}
+
+.header__inner-contact span{
+    color: rgb(11, 199, 199);
+}
+
+.header__inner-toggle{
+    display: none;
+}
+@media all and (max-width: 1320px) {
+    .header-navigation{
+        width: 60%;
+    }
+}
+
+
+
+@media all and (max-width: 900px){
+    .header-navigation{
+        display: none !important;
+    }
+
+    .header__inner-contact{
+        display: none;
+    }
+
+    .header__inner-toggle{
+        display: flex;
+        margin: auto 0;
+    }
+}
