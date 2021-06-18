@@ -6,21 +6,34 @@ import SliderCard from '../SliderCard/SliderCard'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import meryMain from '../../assets/mary-site-bg1.png'
+import meryMain1 from '../../assets/mary-site-bg1.png'
+import meryMain2 from '../../assets/masha-main-prob1.png'
+import meryMain3 from '../../assets/masha2017Self .jpg'
+import meryMain4 from '../../assets/masha2017-bg.png'
+import meryMain5 from '../../assets/masha-bubble-bg.png'
+import meryMain6 from '../../assets/masha2017SelfBuble.png'
 import {Container, Form} from "react-bootstrap";
 import SimpleText from "../SimpleText/SimpleText";
+import Button from "../Button/Button";
 function Main(props){
-    const MainTextStyle={};
+    const MainTextStyle={
+
+    };
     return (
     <div className="main">
        <div className="main__inner">
+           <div className="main-left-block">
             <div className="main-text-container">
         <Title text="Психотерапевт Марія Шугай" style={MainTextStyle}/>
                <SubTitle text="Сертифікований та акредитований гештальт-терапевт, керівник навчальних та терапевтичних програм" style={MainTextStyle}/>
                 <SubTitle text="Директор Інституту практичної психології та психотерапії Національного університету «Острозька академія»"style={MainTextStyle}/>
             </div>
+               <div className="main-button-container">
+               <Button text = "Записатись"/>
+               </div>
+           </div>
             <div className="main-image-container">
-                <img src={meryMain} width='100%' height="100%" />
+                <img src={meryMain6} width='100%' height='790px' />
             </div>
         </div>
     </div>
