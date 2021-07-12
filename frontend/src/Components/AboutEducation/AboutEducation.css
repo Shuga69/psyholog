@@ -5,10 +5,40 @@
 .about-education__inner{
     height: 400px;
 }
+.about-education__inner-mobile{
+    display: none;
+}
 .slick-dots li button:before
 {
     margin-top: 30px !important;
     /*color:  #002236 !important;*/
     color:  #fff !important;
     font-size: 15px !important;
+}
+/* Media request */
+
+@media only screen and (max-width: 768px) {
+    .about-education__inner{
+        display: none;
+    }
+    .about-education__inner-mobile{
+        display: revert;
+        height: 500px;
+    }
+
+}
+
+/* Ipad portret */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+}
+
+/* Ipad Pro portrait */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
+
+}
+
+/* Ipad Pro landscape */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) {
+
 }

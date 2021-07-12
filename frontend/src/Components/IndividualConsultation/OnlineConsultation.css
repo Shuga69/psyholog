@@ -24,3 +24,37 @@
 .online-consultation-img img{
     border-radius: 50px;
 }
+/* Media request */
+
+@media only screen and (max-width: 768px) {
+    .online-consultation__inner{
+        justify-content: center;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .onlineConsultation-text{
+        margin-top: 5%;
+        width:100%;
+    }
+    .online-consultation-img{
+        width: 100%;
+    }
+    .online-consultation-img img{
+        height: 200px;
+    }
+}
+
+/* Ipad portret */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+}
+
+/* Ipad Pro portrait */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
+
+}
+
+/* Ipad Pro landscape */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) {
+
+}

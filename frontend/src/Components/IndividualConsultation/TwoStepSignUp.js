@@ -11,6 +11,13 @@ function TwoStepSignUp(props) {
     const twoStepTitleStyle={
         padding:'50px 0 20px 0'
     };
+    const twoStepCircleStyle={
+        'font-size':'18px',
+        'text-align':'center',
+
+        width: '220px',
+        height: '220px'
+    };
         return (
             <div className="two-step-sign-up-container">
                 <SubTitle style={twoStepTitleStyle} text={twoStepTitle}/>
@@ -23,7 +30,14 @@ function TwoStepSignUp(props) {
                     <SimpleText text={twoStepText1}/>
                     <SimpleText text={twoStepText2}/>
                 </div>
+                <div className="circle-mobile">
+                    <StepCircle style={twoStepCircleStyle} number = {twoStepText1}/>
+                    <StepLine/>
+                    <StepCircle style={twoStepCircleStyle} number = {twoStepText2}/>
+                </div>
+
             </div>
+
         );
 }
 

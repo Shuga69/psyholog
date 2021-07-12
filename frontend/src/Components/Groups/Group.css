@@ -39,3 +39,42 @@
     justify-content: space-around;
     align-items: center;
 }
+/* Media request */
+
+@media only screen and (max-width: 768px) {
+    .group-container{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .group-container-info{
+        width: 100%;
+    }
+    .group-container-img{
+        width:100%;
+    }
+    .group-container-img img{
+       height: 200px;
+    }
+    .group-short-info-container{
+        width: 100%;
+    }
+    .group-text{
+        padding: 10px 0px 10px 0px;
+        text-align: center;
+    }
+}
+
+/* Ipad portret */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+}
+
+/* Ipad Pro portrait */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
+
+}
+
+/* Ipad Pro landscape */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) {
+
+}

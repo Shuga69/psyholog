@@ -52,13 +52,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
                 .authorizeRequests()
-                .antMatchers(HttpMethod.POST, "/admin/register","/admin/login", "/upload","/files","/user/create","/news/subscribe")
+                .antMatchers(HttpMethod.POST, "/admin/register","/admin/login", "/upload","/files",
+                        "/user/create","/news/subscribe","/adminPanel/addEvent")
                 .permitAll()
-                .antMatchers(HttpMethod.POST, "/adminPanel/addEvent")
-                .hasRole("ADMIN")
                 .antMatchers(HttpMethod.GET).permitAll()
                 .antMatchers(HttpMethod.PUT, "/ticket/reservePlace").permitAll()
-
+                .antMatchers(HttpMethod.DELETE, "/adminPanel/deleteEvent").permitAll()
                 .antMatchers("/img/**").permitAll()
 
                 .anyRequest().hasAnyRole("ADMIN")

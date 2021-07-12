@@ -10,8 +10,9 @@ function IndividualConsultation (props) {
 
     const titleTextStyle={
         color:'white',
-        padding:'75px 0 30px 0'
-    };
+        padding:'75px 0 30px 0',
+
+    }
         return (
             <div className="individual-consultation-section">
 

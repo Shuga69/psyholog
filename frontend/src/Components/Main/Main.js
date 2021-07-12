@@ -17,7 +17,7 @@ import SimpleText from "../SimpleText/SimpleText";
 import Button from "../Button/Button";
 function Main(props){
     const MainTextStyle={
-
+        padding:'0 10px 0 10px'
     };
     return (
     <div className="main">
@@ -26,6 +26,9 @@ function Main(props){
             <div className="main-text-container">
         <Title text="Психотерапевт Марія Шугай" style={MainTextStyle}/>
                <SubTitle text="Сертифікований та акредитований гештальт-терапевт, керівник навчальних та терапевтичних програм" style={MainTextStyle}/>
+                <div className="main-image-container-mobile">
+                    <img className="main-image" src={meryMain6}  />
+                </div>
                 <SubTitle text="Директор Інституту практичної психології та психотерапії Національного університету «Острозька академія»"style={MainTextStyle}/>
             </div>
                <div className="main-button-container">
@@ -33,7 +36,7 @@ function Main(props){
                </div>
            </div>
             <div className="main-image-container">
-                <img src={meryMain6} width='100%' height='790px' />
+                <img className="main-image" src={meryMain6}  />
             </div>
         </div>
     </div>

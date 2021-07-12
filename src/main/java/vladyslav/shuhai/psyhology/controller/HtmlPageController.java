@@ -18,4 +18,8 @@ public class HtmlPageController {
     public String solo() {
         return "index.html";
     }
+    @RequestMapping("/adminPage")
+    public String adminPage() {
+        return "index.html";
+    }
 }

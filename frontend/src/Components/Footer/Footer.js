@@ -41,9 +41,9 @@ function Footer(props) {
                         height="50px"
                     />
                 </NavLink>
-                <FooterMenu  content={footerMenuContent} title={footer1MenuTitle}/>
-                <FooterMenu content={footerContactContent} title={footer2MenuTitle}/>
-                <FooterMenu content={footerSocialContent} title={footer3MenuTitle}/>
+                <FooterMenu className="footer-menu-mobile" content={footerMenuContent} title={footer1MenuTitle}/>
+                <FooterMenu className="footer-menu" content={footerContactContent} title={footer2MenuTitle}/>
+                <FooterMenu className="footer-menu" content={footerSocialContent} title={footer3MenuTitle}/>
                 </div>
                 <div className="footer-bottom">
                     <a href="http://monovex-studio.herokuapp.com/">{footerBottomText}</a>

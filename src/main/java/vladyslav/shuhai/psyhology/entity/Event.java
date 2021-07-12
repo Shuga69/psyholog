@@ -25,17 +25,18 @@ public class Event {
 
 
     private String groupName;
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy",
-            timezone = "UTC")
-    private LocalDate startDate;
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy",
-            timezone = "UTC")
-    private LocalDate finishDate;
+//    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy",
+//            timezone = "UTC")
+//    private LocalDate startDate;
+//    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy",
+//            timezone = "UTC")
+    private String date;
 
-    private String startTime;
-
-    private String finishTime;
+    private String time;
+//
+//    private String finishTime;
     private String location;
+    @Column(length=512)
     private String description;
     private String imgPath;
     @ManyToMany(mappedBy = "events")

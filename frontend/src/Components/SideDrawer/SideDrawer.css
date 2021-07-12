@@ -44,6 +44,7 @@
     cursor: pointer;
     text-transform: uppercase;
     margin: 0 auto;
+    text-decoration: none;
 }
 
 .side-drawer__navigation-link + .side-drawer__navigation-link{
@@ -52,7 +53,7 @@
 
 
 .side-drawer__navigation-link:hover{
-    color: #0081d7;
+    color: #6bdae1;
     transition: 0.2s linear;
     text-decoration: none;
 }
@@ -71,5 +72,5 @@
 }
 
 .side-drawer__contact span{
-    color: rgba(30,132,242,0.9);;
+    color: rgba(107, 218, 225, 0.9);;
 }

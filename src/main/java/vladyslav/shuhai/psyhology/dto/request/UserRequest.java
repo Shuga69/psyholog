@@ -8,7 +8,6 @@ import java.util.List;
 @Getter
 @Setter
 public class UserRequest {
-
     private String firstName;
     private String secondName;
     private String email;

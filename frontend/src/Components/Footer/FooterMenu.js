@@ -8,7 +8,7 @@ function FooterMenu(props) {
         'border-bottom':'2px solid white'
     };
         return (
-            <div className="footer-menu">
+            <div className={props.className}>
                 <Title style={footerMenuTitleStyle} text = {props.title}/>
                 <div className="menu-points">
                     {props.content}

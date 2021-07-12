@@ -5,17 +5,24 @@ import './Group.css'
 import SubTitle from "../SubTitle/SubTitle";
 import SimpleText from "../SimpleText/SimpleText";
 import GroupMoreInfo from './GroupMoreInfo'
+import GroupSignUp from './GroupSignUp'
 import Title from '../Title/Title'
 class Group extends Component{
     constructor() {
         super();
         this.state = {
-            show: false
+            show: false,
+            showSignUp: false
         };
         this.showModal = this.showModal.bind(this);
         this.hideModal = this.hideModal.bind(this);
     }
-
+    showSignUp = () => {
+        this.setState({ showSignUp: true });
+    };
+    hideSignUp = () => {
+        this.setState({ showSignUp: false});
+    };
     showModal = () => {
         this.setState({ show: true });
     };
@@ -23,9 +30,11 @@ class Group extends Component{
     hideModal = () => {
         this.setState({ show: false });
     };
+
         render() {
+
             const groupSimpleTextStyle = {
-                'text-align':'left'
+                'text-align':'justify'
             };
             const groupSimpleModalTextStyle = {
                 'text-align':'left',
@@ -41,32 +50,37 @@ class Group extends Component{
             return (
                 <div className="group-container">
                     <div className="group-container-img">
-                        <img src={this.props.image} width="100%" height="400px"/>
+                        <img src={this.props.group.imgPath} width="100%" height="400px"/>
                     </div>
                     <div className="group-container-info">
-                        <SubTitle text={this.props.title}/>
+                        <SubTitle text={this.props.group.groupName}/>
 
                         <div className="group-short-info-container">
-                            <SimpleText text={this.props.location}/>
-                            <SimpleText text={this.props.time}/>
-                            <SimpleText text={this.props.date}/>
+                            <SimpleText text={this.props.group.location}/>
+                            <SimpleText text={this.props.group.time}/>
+                            <SimpleText text={this.props.group.date}/>
+
 
                         </div>
                         <div className="group-text">
-                            <SimpleText style={groupSimpleTextStyle} text={this.props.text}/>
+                            <SimpleText style={groupSimpleTextStyle} text={this.props.group.description}/>
                         </div>
                         <div className="group-button-container">
-                            <Button  text="Записатись"/>
-                            <Button onClick={this.showModal} text="Детальніше"/>
+                            {this.props.group.date==="Група розпочата"?
+                                <div></div>
+                                :<Button onClick={this.showSignUp} text="Записатись"/>}
+                            {/*<Button to="" onClick={this.showModal}  text="Детальніше"/>*/}
                         </div>
-                        <GroupMoreInfo show={this.state.show} handleClose={this.hideModal}>
-                            <Title style={groupModalTitleStyle} text={this.props.title}/>
-                            <div className = "short-modal-info">
-                                <img src={this.props.image} width="75%" height="300px"/>
-                                <SimpleText style={groupSimpleModalTextStyle} text = {this.props.text}/>
-                            </div>
-                            <SimpleText style={groupModalAdditionalTextStyle} text = {this.props.additionalText}/>
-                        </GroupMoreInfo>
+                        {/*<GroupMoreInfo show={this.state.show} handleClose={this.hideModal}>*/}
+                        {/*    <Title style={groupModalTitleStyle} text={this.props.title}/>*/}
+                        {/*    <div className = "short-modal-info">*/}
+                        {/*        <img src={this.props.image} width="75%" height="300px"/>*/}
+                        {/*        <SimpleText style={groupSimpleModalTextStyle} text = {this.props.text}/>*/}
+                        {/*    </div>*/}
+                        {/*    <SimpleText style={groupModalAdditionalTextStyle} text = {this.props.additionalText}/>*/}
+                        {/*</GroupMoreInfo>*/}
+                        <GroupSignUp id = {this.props.group.id} show={this.state.showSignUp} handleClose={this.hideSignUp}/>
+
                     </div>
                 </div>
 

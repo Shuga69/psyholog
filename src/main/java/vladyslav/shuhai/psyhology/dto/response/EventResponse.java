@@ -16,25 +16,23 @@ public class EventResponse {
 
 
     private String groupName;
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy",
-            timezone = "UTC")
-    private LocalDate startDate;
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy",
-            timezone = "UTC")
-    private LocalDate finishDate;
-    private String startTime;
+//    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy",
+//            timezone = "UTC")
+//    private LocalDate startDate;
+//    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy",
+//            timezone = "UTC")
+    private String date;
+//    private String startTime;
 
-    private String finishTime;
+    private String time;
     private String location;
     private String description;
     private String imgPath;
     public EventResponse(Event event) {
         this.id = event.getId();
         this.groupName = event.getGroupName();
-        this.startDate = event.getStartDate();
-        this.finishDate = event.getFinishDate();
-        this.startTime = event.getStartTime();
-        this.finishTime = event.getFinishTime();
+        this.date = event.getDate();
+        this.time = event.getTime();
         this.location = event.getLocation();
         this.description = event.getDescription();
         this.imgPath = event.getImgPath();

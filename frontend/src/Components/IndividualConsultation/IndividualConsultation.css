@@ -41,3 +41,31 @@
     height: 500px;
 }
 
+/* Media request */
+
+@media only screen and (max-width: 768px) {
+    .individual-consultation-section::before{
+
+        height: 300px;
+
+
+    }
+    .individual-text-section{
+        height: 300px;
+    }
+}
+
+/* Ipad portret */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+}
+
+/* Ipad Pro portrait */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
+
+}
+
+/* Ipad Pro landscape */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) {
+
+}

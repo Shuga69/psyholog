@@ -9,7 +9,6 @@ function SliderCard (props) {
     };
     return (
         <div className="slider-item">
-
             <SimpleText style={sliderItemTextStyle} text={props.text}/>
         </div>
     );

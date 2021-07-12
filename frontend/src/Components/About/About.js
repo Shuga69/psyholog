@@ -10,19 +10,17 @@ function About(props){
 
     const subTitleText='Сертифікати та дипломи';
     const contactTitleStyle = {
-        padding: '0 0 60px 0'
+        padding: '0 0 10px 0'
     };
     const contactCertificationSubtitleStyle = {
         'font-weight': '700',
-        padding: '50px 0 30px 0'
+        padding: '30px 0 30px 0'
     };
         return (
-            <div className="about-section">
+            <div id="about" className="about-section">
                 <div className="container">
                     <Title style={contactTitleStyle} text = {contactTitleText}/>
-
                     <div className="about__inner">
-
                         <AboutShortInfo/>
                         <SubTitle style={contactCertificationSubtitleStyle} text={subTitleText}/>
                         <AboutCertification/>

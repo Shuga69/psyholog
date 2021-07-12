@@ -13,7 +13,7 @@ function AboutShortInfo(props) {
     const contactSubtitleText = 'Марія Шугай';
     const contactShortInfoSubtitleStyle = {
         'font-weight': '700',
-        padding: '30px 0 0 0'
+        padding: '10px 0 0 0'
     };
     const infoTextStyle = {
         'text-align':'left',
@@ -22,7 +22,11 @@ function AboutShortInfo(props) {
         return (
 
             <div className="about-short-info">
-
+                <div className="about-short-info-text-mobile">
+                <SubTitle style={contactShortInfoSubtitleStyle} text={contactSubtitleText}/>
+                <SimpleText style={infoTextStyle} text={infoTextLine1}/>
+                <SimpleText style={infoTextStyle} text={infoTextLine2}/>
+                </div>
                 <div className="short-info-img">
                 <img
                     src={MeryMainPhoto}
@@ -31,12 +35,16 @@ function AboutShortInfo(props) {
                     alt="background"
                 />
                 </div>
+                <div className="about-short-info-block">
+                <div className="about-short-info-title">
+                <SubTitle style={contactShortInfoSubtitleStyle} text={contactSubtitleText}/>
+                <SimpleText style={infoTextStyle} text={infoTextLine1}/>
+                <SimpleText style={infoTextStyle} text={infoTextLine2}/>
+                </div>
                 <div className="about-short-info-text">
-                    <SubTitle style={contactShortInfoSubtitleStyle} text={contactSubtitleText}/>
-                    <SimpleText style={infoTextStyle} text={infoTextLine1}/>
-                    <SimpleText style={infoTextStyle} text={infoTextLine2}/>
                     <SimpleText style={infoTextStyle} text={infoTextLine3}/>
                     <SimpleText style={infoTextStyle} text={infoTextLine4}/>
+                </div>
                 </div>
             </div>
         );

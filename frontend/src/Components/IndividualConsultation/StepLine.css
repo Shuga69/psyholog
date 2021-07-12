@@ -6,3 +6,33 @@
     border-top: 2px solid rgb(33, 188, 199);
     border-bottom: 2px solid rgb(33, 188, 199);
 }
+/* Media request */
+
+@media only screen and (max-width: 768px) {
+    .step-line{
+        width: 15px;
+        height: 200px;
+        background-image: linear-gradient(to bottom, rgb(33, 188, 199) 0%,  white 80%);
+        margin: auto -1px;
+        border-top: none;
+        border-bottom: none;
+        border-left: 2px solid rgb(33, 188, 199);
+        border-right: 2px solid rgb(33, 188, 199);
+
+    }
+}
+
+/* Ipad portret */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+}
+
+/* Ipad Pro portrait */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
+
+}
+
+/* Ipad Pro landscape */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) {
+
+}

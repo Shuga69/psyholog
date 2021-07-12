@@ -16,18 +16,18 @@ import java.util.List;
 public class EventRequest {
 
     private String groupName;
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy",
-            timezone = "UTC")
-    private LocalDate startDate;
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy",
-            timezone = "UTC")
-    private LocalDate finishDate;
+//    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy",
+//            timezone = "UTC")
+//    private LocalDate startDate;
+//    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy",
+//            timezone = "UTC")
+    private String date;
 
-    private String startTime;
+//    private String startTime;
 
-    private String finishTime;
+    private String time;
     private String location;
     private String description;
     private String imgPath;
-    private List<Long> userId;
+
 }

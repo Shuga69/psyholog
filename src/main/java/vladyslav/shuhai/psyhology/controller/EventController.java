@@ -25,5 +25,9 @@ public class EventController {
         return eventService.findAll();
 
     }
+    @DeleteMapping("/deleteEvent")
+    public void delete(Long id) {
+        eventService.delete(id);
+    }
 
 }

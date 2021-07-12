@@ -14,6 +14,14 @@ function AboutEducation(props) {
         slidesToScroll: 2,
         arrows:false
     };
+    const mobileSettings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows:false
+    };
     const educationTitleText='Психотерапевтична освіта та практичні навички';
     const sliderCardText1='Завершила програму професійної підготовки гештальт-терапевтів та гештальт-консультантів ' +
         '(31.10. 2007 р.- 30.09.2012 р. Київський Гештальт Університет-акредитований в Європейській Асоціації Гештальт ' +
@@ -33,7 +41,7 @@ function AboutEducation(props) {
         'панічні атаки, психосоматичні симптоми, втрати, дитячий травматичний досвід та інше.';
     const sliderCardText6='Групова терапія — проведення терапевтичних та навчальних груп в гештальт-підході, ' +
         'організація тематичних практичних семінарів; ведучий тренер навчально-терапевтичних програм «Практична' +
-        ' психологія», «Дитяча психологія та психотерапія», «Основи гештальт-терапії 1 ступінь», терапевтичної групи' +
+        ' психологія», «Основи гештальт-терапії 1 ступінь», терапевтичної групи' +
         ' «Психодіагностика та корекція життєвих сценаріїв методом казкотерапії та психодрами».';
     const educationTitleStyle = {
         color:'white',
@@ -46,6 +54,16 @@ function AboutEducation(props) {
                     <SubTitle style={educationTitleStyle} text={educationTitleText}/>
                     <div className="about-education__inner">
                         <Slider {...settings}>
+                            <SliderCard text={sliderCardText1}/>
+                            <SliderCard text={sliderCardText2}/>
+                            <SliderCard text={sliderCardText3}/>
+                            <SliderCard text={sliderCardText4}/>
+                            <SliderCard text={sliderCardText5}/>
+                            <SliderCard text={sliderCardText6}/>
+                        </Slider>
+                    </div>
+                    <div className="about-education__inner-mobile">
+                        <Slider {...mobileSettings}>
                             <SliderCard text={sliderCardText1}/>
                             <SliderCard text={sliderCardText2}/>
                             <SliderCard text={sliderCardText3}/>

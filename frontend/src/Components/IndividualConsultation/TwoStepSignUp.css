@@ -11,10 +11,66 @@
     align-items: center;
     width: 100%;
 }
+.line{
+    position: absolute;
+}
 .two-step-text{
     padding: 20px 0 0 0;
     width: 87%;
     display:flex;
     justify-content: space-between;
     align-items: center;
+}
+.circle-mobile{
+    display: none;
+
+}
+
+/* Media request */
+
+@media only screen and (max-width: 768px) {
+    .circle-bar{
+      display: none;
+    }
+    .two-step-text{
+        display:none;
+    }
+    .circle-mobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 600px;
+    }
+    .circle-bar1-mobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .circle-bar2-mobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+        width: 100%;
+    }
+
+
+}
+
+/* Ipad portret */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+}
+
+/* Ipad Pro portrait */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
+
+}
+
+/* Ipad Pro landscape */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) {
+
 }

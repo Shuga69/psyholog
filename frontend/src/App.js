@@ -5,6 +5,7 @@ import './App.css';
 import Header from './Components/Header/Header';
 import Home from './Pages/Home/Home'
 import MainPage from './Pages/MainPage/MainPage'
+import AdminPage from './Pages/AdminPage/AdminPage'
 import Backdrop from "./Components/Backdrop/Backdrop";
 import GroupLessons from './Components/Groups/GroupLessons(back-free)'
 import IndividualConsultation from './Components/IndividualConsultation/IndividualConsultation'
@@ -42,6 +43,7 @@ class App extends Component {
                     <Route exact path="/" component={MainPage}/>
                     <Route exact path="/groupLessons" component={GroupLessons}/>
                     <Route exact path="/soloLessons" component={IndividualConsultation}/>
+                    <Route exact path="/adminPage" component={AdminPage}/>
                 </Switch>
                 <Footer/>
             </Router>

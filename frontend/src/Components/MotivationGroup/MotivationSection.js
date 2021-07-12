@@ -37,7 +37,7 @@ function MotivationSection(props) {
         'justify-content': 'flex-end',
     };
         return (
-            <div className="motivation-section">
+            <div id="group" className="motivation-section">
                 <div className="container">
                     <Title style={motivationTitleStyle} text={motivationTitleText}/>
                     <div className="motivation-section__inner">

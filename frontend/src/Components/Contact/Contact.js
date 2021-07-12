@@ -17,7 +17,7 @@ function Contact(props) {
    const phoneInfoMessage = `+380 50 375 45 76 - Марія Шугай \n +380 68 059 81 35 - Іраїда (Менеджер груп)`;
     const locationInfoMessage = `м. Рівне, вул. Короленка 5, \n оф. 216 (2 поверх)`;
         return (
-            <section className="contact-section">
+            <section id="contact" className="contact-section">
                 <div className="container">
                     <Title style={titleTextStyle} text = {contactTitleText}/>
                     <div className="contact__inner">

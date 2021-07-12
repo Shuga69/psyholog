@@ -5,7 +5,39 @@ import './GroupLessons(back-free).css'
 import practiceGroupImg from '../../assets/practic-psyhology-group.jpg'
 import terapevtGroupImg from '../../assets/TerapevtGroup.jpg'
 import gestaltGroupImg from '../../assets/gestaltImage.jpg'
+import axios from "axios"
 class GroupLessonsBackFree extends Component {
+    constructor(props){
+
+        super(props);
+        this.state = {
+            groups : []
+        };
+
+    }
+    componentDidMount() {
+        this.findGroups();
+
+    }
+
+    findGroups() {
+        axios.get("http://localhost:8080/adminPanel/getEvent")
+            .then(response => response.data)
+            .then((data) => {
+                this.setState({groups: data});
+                console.log(this.state.groups)
+            });
+    }
+    renderItem(){
+        return(
+            <>
+                {
+                    this.state.groups&&this.state.groups.map((group, index) => (
+                        <Group group={group}/>
+                    )) }
+            </>
+        );
+    }
     render() {
         const groupTitleText = 'Групові заняття';
         const practicGroupTitle = 'Практична психологія';
@@ -76,17 +108,20 @@ class GroupLessonsBackFree extends Component {
         const practicGroupShortInfo = {
             location:'Рівне',
             time: 'Сб, 10:00 - 14:00',
-            date: 'Осінь 2021'
+            date: 'Осінь 2021',
+            id: '1'
         };
         const terapevtGroupShortInfo = {
             location:'Рівне',
             time: 'Сб, 11:00 - 14:30',
-            date: 'Червень 2021'
+            date: 'Червень 2021',
+            id: '2'
         };
         const gestaltGroupShortInfo = {
             location:'Рівне',
             time: 'Сб-Нд, 10:00 - 18:00',
-            date: 'Група розпочата'
+            date: 'Група розпочата',
+            id: '3'
         };
         const groupTitleStyle = {
             padding: '125px 0 50px 0'
@@ -96,15 +131,7 @@ class GroupLessonsBackFree extends Component {
                 <div className="group-lessons-container">
                     <Title style={groupTitleStyle} text={groupTitleText}/>
                     <div className="group-lessons__inner">
-                        <Group title={practicGroupTitle} image={practiceGroupImg}
-                               location={practicGroupShortInfo.location} time={practicGroupShortInfo.time}
-                               date={practicGroupShortInfo.date} text={practicGroupText} additionalText={practicGroupAdditionalText}/>
-                        <Group title={terapevtGroupTitle} image={terapevtGroupImg} location={terapevtGroupShortInfo.location}
-                               time={terapevtGroupShortInfo.time} date={terapevtGroupShortInfo.date}
-                               text={terapevtGroupText} additionalText={terapevtGroupAdditionalText}/>
-                        <Group title={gestaltGroupTitle} image={gestaltGroupImg}
-                               location={gestaltGroupShortInfo.location} time={gestaltGroupShortInfo.time}
-                               date={gestaltGroupShortInfo.date} text={gestaltGroupText} additionalText={gestaltGroupAdditionalText}/>
+                        {this.renderItem()}
                     </div>
                 </div>
             </section>

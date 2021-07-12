@@ -72,6 +72,7 @@ private MailSender mailSender;
             }
 
         }
+        userRepository.save(user);
         assert request.getEventId() != null;
         String groupNameStr = eventService.findById(request.getEventId().get(0)).getGroupName();
         String customerMessage = String.format("Ви успішно зареєстровані на групу: "+groupNameStr+
@@ -79,9 +80,10 @@ private MailSender mailSender;
         String adminMessage = String.format("Ім'я: "+request.getFirstName()+"\nПрізвище: "+request.getSecondName()+
                 "\nEmail: "+request.getEmail()+"\nНомер телефону: "+request.getPhoneNumber()+
                 "\nЗаписався на групу: "+groupNameStr+
-                "\nСписок групи: "+eventService.findById(request.getEventId().get(0)).getUsers().toString()) + user;
-        mailSender.send("mshugay@gmail.com","ЗАПИС на групу",adminMessage );
+                "\nСписок групи: "+eventService.findById(request.getEventId().get(0)).getUsers().toString());
+        mailSender.send("vlshugai@gmail.com","ЗАПИС на групу",adminMessage );
         mailSender.send(request.getEmail(),"Реєстрація на групове заняття: "+groupNameStr,customerMessage);
+
         return user;
     }
     private User findByEmail(String email)  {

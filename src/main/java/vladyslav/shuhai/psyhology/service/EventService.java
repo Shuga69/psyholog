@@ -30,10 +30,8 @@ public class EventService {
             event = new Event();
         }
         event.setGroupName(request.getGroupName());
-        event.setStartDate(request.getStartDate());
-        event.setStartTime(request.getStartTime());
-        event.setFinishDate(request.getFinishDate());
-        event.setFinishTime(request.getFinishTime());
+        event.setDate(request.getDate());
+        event.setTime(request.getTime());
         event.setDescription(request.getDescription());
         event.setLocation(request.getLocation());
         event.setImgPath(request.getImgPath());
@@ -48,6 +46,7 @@ public class EventService {
         eventRepository.delete(findById(id));
     }
     public List<EventResponse> findAll(){
+        System.out.println(eventRepository.findAll().stream().map(EventResponse::new).collect(Collectors.toList()));
         return eventRepository.findAll().stream().map(EventResponse::new).collect(Collectors.toList());
     }
 }

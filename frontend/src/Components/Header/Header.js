@@ -38,7 +38,7 @@ const Header = props => {
                                 alt="Logo"
                             />
                         </NavLink>
-                        <Link to="contacts" smooth={true} className="header__navigation-link">Контакти</Link>
+                        <Link to="contact" smooth={true} className="header__navigation-link">Контакти</Link>
                         <DropdownItem/>
                     </nav>
 
