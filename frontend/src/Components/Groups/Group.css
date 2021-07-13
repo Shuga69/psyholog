@@ -45,6 +45,7 @@
     .group-container{
         justify-content: center;
         flex-direction: column;
+        margin-bottom: 35%;
     }
     .group-container-info{
         width: 100%;

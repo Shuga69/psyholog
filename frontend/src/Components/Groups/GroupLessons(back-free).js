@@ -11,13 +11,15 @@ class GroupLessonsBackFree extends Component {
 
         super(props);
         this.state = {
-            groups : []
+            groups : [],
+            matches: window.matchMedia("(min-width: 768px)").matches
         };
 
     }
     componentDidMount() {
         this.findGroups();
-
+        const handler = e => this.setState({matches: e.matches});
+        window.matchMedia("(min-width: 768px)").addListener(handler);
     }
 
     findGroups() {
@@ -126,10 +128,15 @@ class GroupLessonsBackFree extends Component {
         const groupTitleStyle = {
             padding: '125px 0 50px 0'
         };
+        const groupTitleStyleMobile = {
+            padding: '75px 0 25px 0'
+        };
         return (
             <section className="group-lessons-section">
                 <div className="group-lessons-container">
-                    <Title style={groupTitleStyle} text={groupTitleText}/>
+                    {this.state.matches && ( <Title style={groupTitleStyle} text={groupTitleText}/>)}
+                    {!this.state.matches && (<Title style={groupTitleStyleMobile} text={groupTitleText}/>)}
+
                     <div className="group-lessons__inner">
                         {this.renderItem()}
                     </div>
