@@ -13,7 +13,7 @@
     font-weight: 900;
 }
 @media only screen and (max-width: 768px) {
-    .invitation-section__inner{
-
+    .fat-text{
+        padding: 0px 0 0px 0;
     }
 }

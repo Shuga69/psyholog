@@ -12,8 +12,9 @@
 
 @media only screen and (max-width: 768px) {
     .motivation-check:before{
-
         height: 40px;
-
+    }
+    .motivation-section{
+        padding: 0 0 10px 0;
     }
 }

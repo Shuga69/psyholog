@@ -43,6 +43,7 @@
 @media only screen and (max-width: 768px) {
     .about-short-info{
         flex-direction: column;
+        margin-bottom: -50px;
     }
     .about-short-info-text-mobile{
         display: flex;
@@ -50,7 +51,7 @@
         align-items: center;
         flex-direction: column;
         width: 100%;
-        height: 200px;
+        height: 120px;
     }
     .about-short-info-block{
         height: 200px;
@@ -77,7 +78,7 @@
 
     }
     .short-info-img img{
-        height: 340px;
+        height: 300px;
 
     }
 
