@@ -56,7 +56,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         "/user/create","/news/subscribe","/adminPanel/addEvent")
                 .permitAll()
                 .antMatchers(HttpMethod.GET).permitAll()
-                .antMatchers(HttpMethod.PUT, "/ticket/reservePlace").permitAll()
+                .antMatchers(HttpMethod.PUT, "/adminPanel/updateEvent").permitAll()
                 .antMatchers(HttpMethod.DELETE, "/adminPanel/deleteEvent").permitAll()
                 .antMatchers("/img/**").permitAll()
 

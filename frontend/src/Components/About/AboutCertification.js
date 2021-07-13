@@ -8,25 +8,25 @@ function AboutCertification(props) {
             <div className="about-certification">
 
                 <img
-                    src="http://www.psyholog.rovno.ua/wp-content/uploads/2015/11/sert_psyholog.jpg"
+                    src="https://psyholgy-maria.s3.us-east-2.amazonaws.com/sert_psyholog.jpg"
                     height="20%"
                     width="20%"
                     alt="background"
                 />
                 <img
-                    src="http://www.psyholog.rovno.ua/wp-content/uploads/2015/11/vuz_sert1_ps.jpg"
+                    src="https://psyholgy-maria.s3.us-east-2.amazonaws.com/vuz_sert1_ps.jpg"
                     height="20%"
                     width="20%"
                     alt="background"
                 />
                 <img
-                    src="http://www.psyholog.rovno.ua/wp-content/uploads/2015/11/vuz_sert2_ps.jpg"
+                    src="https://psyholgy-maria.s3.us-east-2.amazonaws.com/vuz_sert2_ps.jpg"
                     height="20%"
                     width="20%"
                     alt="background"
                 />
                 <img
-                    src="http://www.psyholog.rovno.ua/wp-content/uploads/2015/11/vuz_sert3_ps.jpg"
+                    src="https://psyholgy-maria.s3.us-east-2.amazonaws.com/vuz_sert3_ps.jpg"
                     height="20%"
                     width="20%"
                     alt="background"

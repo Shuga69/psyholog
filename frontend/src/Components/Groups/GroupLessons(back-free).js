@@ -21,7 +21,7 @@ class GroupLessonsBackFree extends Component {
     }
 
     findGroups() {
-        axios.get("http://localhost:8080/adminPanel/getEvent")
+        axios.get("https://psyhology-site.herokuapp.com/adminPanel/getEvent")
             .then(response => response.data)
             .then((data) => {
                 this.setState({groups: data});

@@ -25,6 +25,10 @@ public class EventController {
         return eventService.findAll();
 
     }
+    @PutMapping("/updateEvent")
+    public void update(Long id, @Valid @RequestBody EventRequest request) {
+        eventService.update(id, request);
+    }
     @DeleteMapping("/deleteEvent")
     public void delete(Long id) {
         eventService.delete(id);
