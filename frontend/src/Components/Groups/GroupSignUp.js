@@ -33,14 +33,14 @@ const GroupMoreInfo = ({ handleClose, id, show, children }) => {
         <div className={showHideClassName}>
 
             {!sent ? (
-                <form className='modal-main' onSubmit={handleSend}>
+                <form className='modal-main'>
                     <div className="modal-main__inner">
                     <input className="custom-input" type="text" placeholder="email" value={to} onChange={(e) => setTo(e.target.value)} />
                     <input className="custom-input" type="text" placeholder="Номер телефону" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} />
                     <input className="custom-input" type="text" placeholder="Ім'я" value={firstName} onChange={(e) => setFirstName(e.target.value)} />
                     <input className="custom-input" type="text" placeholder="Прізвище" value={secondName} onChange={(e) => setSecondName(e.target.value)} />
                     <div className="button-box">
-                    <Button type="submit" text="Записатись"/>
+                    <Button onClick={handleSend} text="Записатись"/>
                     <Button onClick={handleClose} text="Закрити"/>
                     </div>
                     </div>
