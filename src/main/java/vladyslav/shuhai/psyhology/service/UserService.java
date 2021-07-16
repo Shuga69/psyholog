@@ -81,7 +81,7 @@ private MailSender mailSender;
                 "\nEmail: "+request.getEmail()+"\nНомер телефону: "+request.getPhoneNumber()+
                 "\nЗаписався на групу: "+groupNameStr+
                 "\nСписок групи: "+eventService.findById(request.getEventId().get(0)).getUsers().toString());
-        mailSender.send("vlshugai@gmail.com","ЗАПИС на групу: "+groupNameStr,adminMessage );
+        mailSender.send("mariia.psyholog@gmail.com","ЗАПИС на групу: "+groupNameStr,adminMessage );
         mailSender.send(request.getEmail(),"Реєстрація на групове заняття: "+groupNameStr,customerMessage);
 
         return user;
