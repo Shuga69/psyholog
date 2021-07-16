@@ -32,7 +32,7 @@ function Main(props){
                 <SubTitle text="Директор Інституту практичної психології та психотерапії Національного університету «Острозька академія»"style={MainTextStyle}/>
             </div>
                <div className="main-button-container">
-               <Button text = "Записатись"/>
+               <Button link="contact" text = "Записатись"/>
                </div>
            </div>
             <div className="main-image-container">

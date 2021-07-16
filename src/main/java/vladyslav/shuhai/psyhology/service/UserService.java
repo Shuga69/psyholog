@@ -76,12 +76,12 @@ private MailSender mailSender;
         assert request.getEventId() != null;
         String groupNameStr = eventService.findById(request.getEventId().get(0)).getGroupName();
         String customerMessage = String.format("Ви успішно зареєстровані на групу: "+groupNameStr+
-                ".\nНаш менеджер зв'яжеться з вами для підтвердження реєстрації, гарного дня.");
+                ".\nНаш менеджер зконтактує з вами для підтвердження реєстрації, гарного дня.");
         String adminMessage = String.format("Ім'я: "+request.getFirstName()+"\nПрізвище: "+request.getSecondName()+
                 "\nEmail: "+request.getEmail()+"\nНомер телефону: "+request.getPhoneNumber()+
                 "\nЗаписався на групу: "+groupNameStr+
                 "\nСписок групи: "+eventService.findById(request.getEventId().get(0)).getUsers().toString());
-        mailSender.send("vlshugai@gmail.com","ЗАПИС на групу",adminMessage );
+        mailSender.send("vlshugai@gmail.com","ЗАПИС на групу: "+groupNameStr,adminMessage );
         mailSender.send(request.getEmail(),"Реєстрація на групове заняття: "+groupNameStr,customerMessage);
 
         return user;

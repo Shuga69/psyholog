@@ -41,8 +41,8 @@ function MotivationSection(props) {
                 <div className="container">
                     <Title style={motivationTitleStyle} text={motivationTitleText}/>
                     <div className="motivation-section__inner">
-                        <Motivation style={motivationLeftStyle} btnPosition={btnLeftPosition} text={motivationRightImageText} title={motivationRightImageTitle} img={group1Image}/>
-                        <Motivation style={motivationRightStyle} btnPosition={btnRightPosition} text={motivationLeftImageText} title={motivationLeftImageTitle} img={group2Image}/>
+                        <Motivation style={motivationLeftStyle} btnPosition={btnLeftPosition} text={motivationRightImageText} title={motivationRightImageTitle} img={group2Image}/>
+                        <Motivation style={motivationRightStyle} btnPosition={btnRightPosition} text={motivationLeftImageText} title={motivationLeftImageTitle} img={group1Image}/>
                     </div>
                 </div>
             </div>

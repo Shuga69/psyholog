@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import SubTitle from "../SubTitle/SubTitle";
 import SimpleText from "../SimpleText/SimpleText";
 import './Motivation.css'
-import Button from '../Button/Button'
+import LinkButton from '../Button/LinkButton'
 function Motivation(props) {
     const simpleTextStyle={
         padding: '0 0 10px 0',
@@ -20,7 +20,7 @@ function Motivation(props) {
                     <div className = "motivation-text">
                         <SimpleText style={simpleTextStyle} text={props.text}/>
                         <div style={props.btnPosition} className="btn-container">
-                            <Button  text="Дізнатись більше"/>
+                            <LinkButton link="groupLessons" text="Дізнатись більше"/>
                         </div>
                     </div>
                     <div className="motivation-img">

@@ -18,7 +18,7 @@ function Footer(props) {
     const footerMenuContent = <React.Fragment>
         <Link to="about" smooth={true} className="footer__navigation-link">Про мене</Link>
         <Link to="group" smooth={true} className="footer__navigation-link">Про групи</Link>
-        <Link to="contacts" smooth={true} className="footer__navigation-link">Контакти</Link>
+        <Link to="contact" smooth={true} className="footer__navigation-link">Контакти</Link>
     </React.Fragment>;
     const footerContactContent = <React.Fragment>
         <SimpleText style={footerSimpleTextStyle} text="+380 50 375 45 76 - Марія Шугай"/>
