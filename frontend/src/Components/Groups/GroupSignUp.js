@@ -18,7 +18,7 @@ const GroupMoreInfo = ({ handleClose, id, show, children }) => {
         console.log(eventId);
         console.log(to);
         try {
-            await axios.post("https://psyhology-site.herokuapp.com//user/create", {
+            await axios.post("https://psyhology-site.herokuapp.com/user/create", {
                 email: to,
                 phoneNumber: phoneNumber,
                 firstName: firstName,
