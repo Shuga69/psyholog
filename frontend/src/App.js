@@ -12,6 +12,7 @@ import IndividualConsultation from './Components/IndividualConsultation/Individu
 import SideDrawer from "./Components/SideDrawer/SideDrawer";
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Footer from "./Components/Footer/Footer";
+import GoogleAnalytics from "./Components/GoogleAnalytics/GoogleAnalytics";
 
 class App extends Component {
     state = {
@@ -46,6 +47,7 @@ class App extends Component {
                     <Route exact path="/adminPage" component={AdminPage}/>
                 </Switch>
                 <Footer/>
+                <GoogleAnalytics/>
             </Router>
 
         );
