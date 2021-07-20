@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Group from "./Group";
 import Title from '../Title/Title'
 import './GroupLessons(back-free).css'
+import Helmet from "react-helmet"
 import practiceGroupImg from '../../assets/practic-psyhology-group.jpg'
 import terapevtGroupImg from '../../assets/TerapevtGroup.jpg'
 import gestaltGroupImg from '../../assets/gestaltImage.jpg'
@@ -133,6 +134,14 @@ class GroupLessonsBackFree extends Component {
         };
         return (
             <section className="group-lessons-section">
+                <Helmet>
+                    <title>Групові заняття - психологія</title>
+                    <meta name="description" content="Групові заняття: Основи гештальт-терапії, Терапевтична група,
+                    Практична психологія. Ведучий тренер: Шугай Марія Анатоліївна"/>
+                    <meta name="keywords" content="психолог навчання рівне, Психологія групи, Терапевтичні групові заняття,
+                    Гештальт-терапія, гештальт-терапія навчання, гештальт терапія навчання рівне, практична психологія навчання,
+                    Практична психологія рівне, навчання на психолога"/>
+                </Helmet>
                 <div className="group-lessons-container">
                     {this.state.matches && ( <Title style={groupTitleStyle} text={groupTitleText}/>)}
                     {!this.state.matches && (<Title style={groupTitleStyleMobile} text={groupTitleText}/>)}

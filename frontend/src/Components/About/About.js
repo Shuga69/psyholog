@@ -5,6 +5,7 @@ import SubTitle from "../SubTitle/SubTitle";
 import SimpleText from "../SimpleText/SimpleText";
 import AboutShortInfo from "./AboutShortInfo";
 import AboutCertification from "./AboutCertification";
+import Helmet from "react-helmet"
 function About(props){
     const contactTitleText = 'Про мене';
 
@@ -18,6 +19,9 @@ function About(props){
     };
         return (
             <div id="about" className="about-section">
+                <Helmet>
+
+                </Helmet>
                 <div className="container">
                     <Title style={contactTitleStyle} text = {contactTitleText}/>
                     <div className="about__inner">
