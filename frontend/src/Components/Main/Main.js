@@ -29,8 +29,10 @@ function Main(props){
                 <div className="main-image-container-mobile">
                     <img className="main-image" src={meryMain6}  />
                 </div>
+                <div className="main-text-mobile">
                 <SubTitle text="Директор Інституту практичної психології та психотерапії Національного університету «Острозька академія»"style={MainTextStyle}/>
-            </div>
+                </div>
+                </div>
                <div className="main-button-container">
                <Button link="contact" text = "Записатись"/>
                </div>

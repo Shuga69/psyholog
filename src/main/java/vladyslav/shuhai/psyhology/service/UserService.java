@@ -75,8 +75,8 @@ private MailSender mailSender;
         userRepository.save(user);
         assert request.getEventId() != null;
         String groupNameStr = eventService.findById(request.getEventId().get(0)).getGroupName();
-        String customerMessage = String.format("Ви успішно зареєстровані на групу: "+groupNameStr+
-                ".\nНаш менеджер зконтактує з вами для підтвердження реєстрації, гарного дня.");
+        String customerMessage = String.format("Ви успішно зареєстровані в групу: "+groupNameStr+
+                ".\nНаш менеджер сконтактує з Вами для підтвердження реєстрації, гарного дня.");
         String adminMessage = String.format("Ім'я: "+request.getFirstName()+"\nПрізвище: "+request.getSecondName()+
                 "\nEmail: "+request.getEmail()+"\nНомер телефону: "+request.getPhoneNumber()+
                 "\nЗаписався на групу: "+groupNameStr+

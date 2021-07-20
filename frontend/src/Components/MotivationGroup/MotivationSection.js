@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Title from "../Title/Title";
 import Motivation from "./Motivation";
 import './MotivationSection.css'
-import group1Image from '../../assets/group-room.jpg'
+import group1Image from '../../assets/groupPhotoxxx.jpg'
 import group2Image from '../../assets/group-nature.jpg'
 import CheckedText from "./CheckedText";
 function MotivationSection(props) {

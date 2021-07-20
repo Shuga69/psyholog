@@ -8,7 +8,8 @@ import SubTitle from "../SubTitle/SubTitle";
 function AboutShortInfo(props) {
     const infoTextLine1='Психолог, психотерапевт';
     const infoTextLine2='Кандидат психологічних наук';
-    const infoTextLine3='Сертифікований та акредитований гештальт-терапевт, керівник навчальних та терапевтичних програм';
+    const infoTextLine3='Сертифікований та акредитований гештальт-терапевт, керівник навчальних та терапевтичних програм:' +
+        ' https://www.kgu.org.ua/command/maria_shygay';
     const infoTextLine4='Директор Інституту практичної психології та психотерапії Національного університету «Острозька академія»';
     const contactSubtitleText = 'Марія Шугай';
     const contactShortInfoSubtitleStyle = {

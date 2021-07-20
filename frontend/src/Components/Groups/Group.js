@@ -49,12 +49,16 @@ class Group extends Component{
             };
             return (
                 <div className="group-container">
+                    <div className="group-subtitle-mobile">
+                        <SubTitle text={this.props.group.groupName}/>
+                    </div>
                     <div className="group-container-img">
                         <img src={this.props.group.imgPath} width="100%" height="400px"/>
                     </div>
                     <div className="group-container-info">
+                        <div className="group-subtitle">
                         <SubTitle text={this.props.group.groupName}/>
-
+                        </div>
                         <div className="group-short-info-container">
                             <SimpleText text={this.props.group.location}/>
                             <SimpleText text={this.props.group.time}/>

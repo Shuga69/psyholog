@@ -14,6 +14,9 @@
     width: 50%;
 
 }
+.group-subtitle-mobile{
+    display: none;
+}
 .group-short-info-container{
     display: flex;
     justify-content: space-between;
@@ -49,6 +52,12 @@
     }
     .group-container-info{
         width: 100%;
+    }
+    .group-subtitle-mobile{
+        display: inline;
+    }
+    .group-subtitle{
+        display: none;
     }
     .group-container-img{
         width:100%;
