@@ -51,6 +51,7 @@ function AboutShortInfo(props) {
                 </div>
                 <div className="about-short-info-text">
                     <SimpleText style={infoTextStyle} text={infoTextLine3}/>
+                    <a href="https://www.kgu.org.ua/command/maria_shygay">https://www.kgu.org.ua/command/maria_shygay</a>
                     <SimpleText style={infoTextStyle} text={infoTextLine4}/>
                 </div>
                 </div>
