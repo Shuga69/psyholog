@@ -20,7 +20,9 @@
     align-items: flex-start;
     flex-direction: column;
     width: 45%;
-    height: 400px;
+    height: 200px;
+    margin-top: 5%;
+
 }
 .about-short-info-title{
     display: flex;
@@ -28,7 +30,8 @@
     align-items: flex-start;
     flex-direction: column;
     width: 100%;
-    height: 400px;
+    height: 200px;
+
 }
 .about-short-info-text{
     display: flex;
@@ -38,12 +41,16 @@
     width: 100%;
     height: 400px;
 }
+.kgu-link{
+    text-decoration: none;
+    color: black;
+}
 /* Media request */
 
 @media only screen and (max-width: 768px) {
     .about-short-info{
         flex-direction: column;
-        margin-bottom: -50px;
+
     }
     .about-short-info-text-mobile{
         display: flex;
@@ -56,7 +63,6 @@
     .about-short-info-block{
         height: 200px;
         width: 100%;
-
     }
     .about-short-info-text{
         display: flex;
@@ -78,17 +84,37 @@
 
     }
     .short-info-img img{
-        height: 300px;
+        height: 100%;
 
     }
 
 }
-
 /* Ipad portret */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
 
 }
 
+/* Ipad landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .about-short-info-text{
+
+        height: 200px;
+    }
+    .about-short-info-block{
+
+        height: 250px;
+
+    }
+    .short-info-img{
+    width: 40%;
+
+    }
+    .short-info-img img{
+        height: 80%;
+
+    }
+
+}
 /* Ipad Pro portrait */
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
 
@@ -96,5 +122,23 @@
 
 /* Ipad Pro landscape */
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) {
+    .about-short-info-text{
+
+        height: 200px;
+    }
+    .about-short-info-block{
+
+        height: 250px;
+
+    }
+    .short-info-img{
+        width: 40%;
+
+    }
+    .short-info-img img{
+        height: 80%;
+
+    }
+
 
 }

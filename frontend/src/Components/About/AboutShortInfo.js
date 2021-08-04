@@ -9,6 +9,7 @@ function AboutShortInfo(props) {
     const infoTextLine1='Психолог, психотерапевт';
     const infoTextLine2='Кандидат психологічних наук';
     const infoTextLine3='Сертифікований та акредитований гештальт-терапевт, керівник навчальних та терапевтичних програм:';
+
     const infoTextLine4='Директор Інституту практичної психології та психотерапії Національного університету «Острозька академія»';
     const contactSubtitleText = 'Марія Шугай';
     const contactShortInfoSubtitleStyle = {
@@ -20,8 +21,8 @@ function AboutShortInfo(props) {
         'margin-top':'-20px'
     };
     const infoTextStyle = {
-        'text-align':'left',
-        padding:'0 0 20px 0'
+
+        padding:'20px 0 0px 0'
     };
     const infoTextStyleMobile = {
         'text-align':'left',
@@ -48,10 +49,13 @@ function AboutShortInfo(props) {
                 <SubTitle style={contactShortInfoSubtitleStyle} text={contactSubtitleText}/>
                 <SimpleText style={infoTextStyle} text={infoTextLine1}/>
                 <SimpleText style={infoTextStyle} text={infoTextLine2}/>
+
                 </div>
+
                 <div className="about-short-info-text">
+
                     <SimpleText style={infoTextStyle} text={infoTextLine3}/>
-                    <a href="https://www.kgu.org.ua/command/maria_shygay">https://www.kgu.org.ua/command/maria_shygay</a>
+                 <a className="kgu-link" href="https://www.kgu.org.ua/command/maria_shygay">https://www.kgu.org.ua</a>
                     <SimpleText style={infoTextStyle} text={infoTextLine4}/>
                 </div>
                 </div>

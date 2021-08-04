@@ -40,9 +40,9 @@ class App extends Component {
             <div>
             <Helmet>
                 <meta charSet="UTF-8"/>
-                <title>Психотерапевт Марія Шугай</title>
-                <meta name="description" content="Психотерапевт місто Рівне Марія Шугай, сертифікований та акредитований
-                 гештальт-терапевт, керівник навчальних та терапевтичних програм"/>
+                <title>Психотерапевт (Психолог) Рівне | Шугай Марія</title>
+                <meta name="description" content="Психотерапевт Рівне Марія Шугай, консультації психолога в місті Рівне.
+                Групові та індивідуальні заняття в психотерапевта Марії Шугай"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="theme-color" content="#000000" />
                 <meta name="google-site-verification" content="4XqPsrd44lecdLIAKsvCyvkjS5rLTSWvo1sVARb3tx0" />
@@ -56,7 +56,7 @@ class App extends Component {
             </Helmet>
             <Router>
                 <Header drawerClickHandler={this.drawerToggleClickHandler} toggle={this.state.sideDrawerOpen}/>
-                <SideDrawer show={this.state.sideDrawerOpen}/>
+                <SideDrawer click={this.backdropClickHandler} show={this.state.sideDrawerOpen}/>
                 {backdrop}
                 <Switch>
                     <Route exact path="/" component={MainPage}/>

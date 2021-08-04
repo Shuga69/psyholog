@@ -76,9 +76,21 @@
 
 /* Ipad portret */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .group-container{
+
+        width: 60%;
+
+    }
+}
+/* Ipad landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .group-container-info{
+
+        width: 60%;
+
+    }
 
 }
-
 /* Ipad Pro portrait */
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
 

@@ -6,11 +6,11 @@ import './HowToContact.css'
 function HowToContact(props) {
     const simpleTextStyle={
         padding: '0 0 10px 0',
-        'text-align': 'left'
+
 
     };
     const titleTextStyle={
-        'text-align': 'left',
+
         'font-weight':'900'
     };
     const howToContactRightText={

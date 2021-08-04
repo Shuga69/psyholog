@@ -62,3 +62,22 @@
     box-shadow: none;
     transition: 0.5s;
 }
+@media only screen and (max-width: 768px) {
+
+    .button-box{
+        flex-direction: column;
+
+        height: 30%;
+        width: 100%;
+    }
+    .modal-main {
+
+        width: 60%;
+        height: 80%;
+
+    }
+    .custom-input{
+        width: 100%;
+    }
+
+}

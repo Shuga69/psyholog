@@ -53,7 +53,7 @@ class Group extends Component{
                         <SubTitle text={this.props.group.groupName}/>
                     </div>
                     <div className="group-container-img">
-                        <img src={this.props.group.imgPath} width="100%" height="400px"/>
+                        <img src={this.props.group.imgPath} width="100%" />
                     </div>
                     <div className="group-container-info">
                         <div className="group-subtitle">

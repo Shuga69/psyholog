@@ -32,3 +32,8 @@
     background: #fff;
     padding: 20px;
 }
+@media all and (max-width: 900px){
+    .header__navigation-link1{
+       display: none;
+    }
+}

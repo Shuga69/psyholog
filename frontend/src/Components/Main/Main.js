@@ -17,7 +17,8 @@ import SimpleText from "../SimpleText/SimpleText";
 import Button from "../Button/Button";
 function Main(props){
     const MainTextStyle={
-        padding:'0 10px 0 10px'
+        padding:'0 10px 0 10px',
+
     };
     return (
     <div className="main">

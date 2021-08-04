@@ -11,9 +11,9 @@ import AdminPage from "../../Pages/AdminPage/AdminPage";
 import {BrowserRouter as Router} from "react-router-dom";
 
 const SideDrawer = props => {
-    let show = props.show;
+
     let drawerClasses = 'side-drawer';
-    if(show){
+    if(props.show){
         drawerClasses = 'side-drawer open';
     }
 
@@ -27,12 +27,12 @@ const SideDrawer = props => {
                 />
             </div>
             <nav className="side-drawer__navigation">
-                <NavLink to="/" smooth={true} className="side-drawer__navigation-link">Головна</NavLink>
-                <Link to="about" smooth={true} onClick={()=> show=false} className="side-drawer__navigation-link">Про мене</Link>
-                <Link to="group" smooth={true} className="side-drawer__navigation-link">Про групи</Link>
-                <Link to="contact" smooth={true} className="side-drawer__navigation-link">Контакти</Link>
-                <NavLink to="groupLessons" smooth={true} className="side-drawer__navigation-link">Групові заняття</NavLink>
-                <NavLink to="soloLessons" smooth={true} className="side-drawer__navigation-link">Індивідуальні консультації</NavLink>
+                <NavLink onClick={props.click} to="/" smooth={true} className="side-drawer__navigation-link">Головна</NavLink>
+                <Link onClick={props.click} to="about" smooth={true} className="side-drawer__navigation-link">Про мене</Link>
+                <Link onClick={props.click} to="group" smooth={true} className="side-drawer__navigation-link">Про групи</Link>
+                <Link onClick={props.click} to="contact" smooth={true} className="side-drawer__navigation-link">Контакти</Link>
+                <NavLink onClick={props.click} to="groupLessons" smooth={true} className="side-drawer__navigation-link">Групові заняття</NavLink>
+                <NavLink onClick={props.click} to="soloLessons" smooth={true} className="side-drawer__navigation-link">Індивідуальні консультації</NavLink>
             </nav>
             <div className="side-drawer__contact">
                 <a className="contact-phone" href="tel:0999990999"><span>(</span>+380<span>)</span>-50-375-45-76</a>

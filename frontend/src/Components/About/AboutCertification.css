@@ -12,7 +12,15 @@
 /* Media request */
 
 @media only screen and (max-width: 768px) {
-
+    .about-certification{
+        flex-wrap: wrap;
+    }
+    .about-certification img{
+        width: 50%;
+    }
+    .about-certification img:hover{
+        transform: scale(1.2);
+    }
 }
 
 /* Ipad portret */

@@ -55,7 +55,7 @@
 .main{
     height: 100%;
     background: linear-gradient(135deg, rgb(255, 255, 255) 50%, rgb(184, 253, 255), rgb(174, 249, 255));
-}
+    }
     .main-image-container{
         display: none;
     }
@@ -85,13 +85,32 @@
         align-items: center;
         margin-bottom: 10%;
     }
+
 }
 
 /* Ipad portret */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .main-text-container{
+        display: flex;
+
+        align-items: center;
+
+    }
+    .main-image{
+           width: 70%;
+           height: 70%;
+           border-radius: 50px;
+       }
 
 }
 
+/* Ipad landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .main-image-container{
+        width: 20%;
+    }
+
+}
 /* Ipad Pro portrait */
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
 
