@@ -40,7 +40,7 @@ const GroupMoreInfo = ({ handleClose, id, show, children }) => {
                     <input className="custom-input" type="text" placeholder="Ім'я" value={firstName} onChange={(e) => setFirstName(e.target.value)} />
                     <input className="custom-input" type="text" placeholder="Прізвище" value={secondName} onChange={(e) => setSecondName(e.target.value)} />
                     <div className="button-box">
-                        <button className="btn-link" type="submit">Записатись</button>
+                        <button className="btn-link" onClick={handleClose} type="submit">Записатись</button>
                         <button className="btn-link" type="button" onClick={handleClose}>Закрити</button>
                     </div>
                     </div>
