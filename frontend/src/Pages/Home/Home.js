@@ -1,7 +1,6 @@
 // import React, { Component } from 'react'
 // import './Home.css'
 // import background from './HomeImage/main-photo-bgv2.jpg';
-// import backgroundMery from './HomeImage/mary-site-bg1.png';
 // import titleVideo from './titleVideo.mp4';
 // import groupPhoto from './HomeImage/group-image.jpg';
 // import soloPhoto from '../../assets/solo-image.jpg';

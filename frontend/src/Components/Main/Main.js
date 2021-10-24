@@ -2,18 +2,9 @@ import React, {Component} from 'react';
 import Title from "../Title/Title";
 import './Main.css'
 import SubTitle from '../SubTitle/SubTitle'
-import SliderCard from '../SliderCard/SliderCard'
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import meryMain1 from '../../assets/mary-site-bg1.png'
-import meryMain2 from '../../assets/masha-main-prob1.png'
-import meryMain3 from '../../assets/masha2017Self .jpg'
-import meryMain4 from '../../assets/masha2017-bg.png'
-import meryMain5 from '../../assets/masha-bubble-bg.png'
 import meryMain6 from '../../assets/masha2017SelfBuble.png'
-import {Container, Form} from "react-bootstrap";
-import SimpleText from "../SimpleText/SimpleText";
 import Button from "../Button/Button";
 function Main(props){
     const MainTextStyle={
